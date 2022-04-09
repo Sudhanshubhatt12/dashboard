@@ -1,0 +1,222 @@
+.main-mail-cnt {
+    width: calc(100% - 12rem);
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 231, 231);
+
+}
+
+.header-mail {
+
+    margin-bottom: 1rem;
+
+    flex: 5%;
+    background-color: rgb(240, 234, 234);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.header-mail .frst {
+    position: relative;
+    left: 1rem;
+
+}
+
+.header-mail .frst .frst-i {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.header-mail .frst .frst-i svg {
+    background-color: rgb(6, 65, 9);
+    color: white;
+}
+
+
+.header-mail .secoand {
+    position: relative;
+    right: 1rem;
+}
+
+.header-mail .secoand .secoand-i {
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.body-mail {
+    margin: 0 1rem;
+
+    flex: 95%;
+    display: flex;
+}
+
+.body-left {
+
+    flex: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.body-left button {
+    background-color: rgb(6, 65, 9);
+    width: 100%;
+    height: 2rem;
+    color: white;
+}
+
+.body-left ul {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.body-left ul li {
+    width: 100%;
+    list-style: none;
+    font-size: 1rem;
+    padding-top: 0.8rem;
+}
+
+.body-left .folders li svg {
+    margin-right: 0.2rem;
+    font-size: 1.1rem;
+    position: relative;
+    top: 3px;
+}
+
+.body-left .categories li svg {
+    margin-right: 0.2rem;
+    font-size: 0.8rem;
+    position: relative;
+    top: 2px;
+    color: rgb(0, 0, 255);
+}
+
+.body-left .labels .list {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.body-left .labels .list li {
+    width: 40%;
+    height: 1.6rem;
+    border: grey solid 1px;
+    background-color: white;
+    margin-left: 0.5rem;
+    margin-top: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.body-right {
+
+    flex: 85%;
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.right-head {
+
+    flex: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px rgb(211, 205, 205) solid;
+
+}
+
+.right-head .right-head-frst {
+    padding: 0.8rem 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-head .right-head-frst .search svg {
+    cursor: pointer;
+    font-size: 1.1rem;
+    border: 1px grey solid;
+    position: relative;
+    top: 2px;
+    background-color: rgb(6, 65, 9);
+    color: white;
+}
+
+.right-head .right-head-secoand {
+    padding: 0.8rem 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-head .right-head-secoand .left {
+    display: flex;
+    height: 1.5rem;
+}
+
+.right-head .right-head-secoand .left span {
+    border: 1px grey solid;
+    cursor: pointer;
+    margin-right: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-head .right-head-secoand .right {
+    display: flex;
+    height: 1.5rem;
+}
+
+.right-head .right-head-secoand .right span {
+    border: 1px grey solid;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.right-body {
+
+    flex: 80%;
+
+}
+
+.right-body ul {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-body ul li {
+    width: 100%;
+    height: 1.3rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.right-body ul li:hover {
+    background-color: rgb(209, 202, 202);
+    color: white;
+}

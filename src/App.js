@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Sidebar from "./component/Sidebar";
+import { Routes, Route, Navigate} from "react-router-dom";
+import useAuth from "./component/UseAuth";
+import Loginform from "./component/Loginform";
+import Mail from "./component/mail/Mail";
+
+function RequireAuth({ children }) {
+  const { authed } = useAuth();
+
+  return authed === true ? children : <Navigate to="/login" replace />;
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Sidebar />
+      <Routes>
+        <Route
+          path="/Mail"
+          element={
+            <RequireAuth>
+              <Mail />
+             </RequireAuth> 
+          }
+        />
+        <Route path="/Loginform" element={<Loginform />} />
+      </Routes>
+    </>
   );
 }
 

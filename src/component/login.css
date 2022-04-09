@@ -1,0 +1,33 @@
+.login-main{
+    width: calc(100% - 15rem);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 15rem;
+    right: 0;
+
+}
+.login-main form{
+    border: 1px black solid;
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.login-main form input{
+    margin-bottom: 2rem;
+    position: relative;
+    width: 12rem;
+ 
+
+}
+.login-main form button{
+    margin-top: 0rem;
+    width: 6rem;
+    position: relative;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}
